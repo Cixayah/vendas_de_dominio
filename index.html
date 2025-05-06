@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites à Venda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dracula: {
+                            background: '#282a36',
+                            current: '#44475a',
+                            foreground: '#f8f8f2',
+                            comment: '#6272a4',
+                            cyan: '#8be9fd',
+                            green: '#50fa7b',
+                            orange: '#ffb86c',
+                            pink: '#ff79c6',
+                            purple: '#bd93f9',
+                            red: '#ff5555',
+                            yellow: '#f1fa8c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dracula-background min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="container max-w-4xl mx-auto">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-dracula-pink">Sites disponíveis para venda</h1>
+            <p class="text-dracula-cyan mt-4 text-lg">Escolha um domínio e envie sua proposta</p>
+        </div>
+
+        <!-- Lista de domínios disponíveis -->
+        <div class="bg-dracula-current rounded-lg shadow-xl p-6 mb-8 border-2 border-dracula-purple">
+            <h2 class="text-2xl font-bold text-dracula-green mb-4">Domínios Disponíveis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-dracula-background p-4 rounded-md border border-dracula-comment">
+                    <h3 class="text-xl text-dracula-yellow font-medium">exemploum.com.br</h3>
+                    <p class="text-dracula-foreground mt-2">Domínio ideal para empresas de tecnologia</p>
+                    <p class="text-dracula-orange mt-1">Valor inicial: R$ 1.500,00</p>
+                </div>
+                <div class="bg-dracula-background p-4 rounded-md border border-dracula-comment">
+                    <h3 class="text-xl text-dracula-yellow font-medium">exemplodois.com.br</h3>
+                    <p class="text-dracula-foreground mt-2">Perfeito para e-commerce</p>
+                    <p class="text-dracula-orange mt-1">Valor inicial: R$ 2.000,00</p>
+                </div>
+                <div class="bg-dracula-background p-4 rounded-md border border-dracula-comment">
+                    <h3 class="text-xl text-dracula-yellow font-medium">exemplotres.net</h3>
+                    <p class="text-dracula-foreground mt-2">Ótimo para sites institucionais</p>
+                    <p class="text-dracula-orange mt-1">Valor inicial: R$ 1.800,00</p>
+                </div>
+                <div class="bg-dracula-background p-4 rounded-md border border-dracula-comment">
+                    <h3 class="text-xl text-dracula-yellow font-medium">exemploquatro.net.br</h3>
+                    <p class="text-dracula-foreground mt-2">Ideal para blogs e portais</p>
+                    <p class="text-dracula-orange mt-1">Valor inicial: R$ 1.200,00</p>
+                </div>
+                <div class="bg-dracula-background p-4 rounded-md border border-dracula-comment">
+                    <h3 class="text-xl text-dracula-yellow font-medium">exemplocinco.com</h3>
+                    <p class="text-dracula-foreground mt-2">Domínio internacional premium</p>
+                    <p class="text-dracula-orange mt-1">Valor inicial: R$ 3.500,00</p>
+                </div>
+                <div class="bg-dracula-background p-4 rounded-md border border-dracula-comment">
+                    <h3 class="text-xl text-dracula-yellow font-medium">exemploseis.org</h3>
+                    <p class="text-dracula-foreground mt-2">Ideal para organizações</p>
+                    <p class="text-dracula-orange mt-1">Valor inicial: R$ 1.300,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulário de proposta -->
+        <div class="bg-dracula-current rounded-lg shadow-xl w-full max-w-md mx-auto p-8 border-2 border-dracula-purple">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-dracula-pink">Envie sua proposta</h2>
+            </div>
+
+            <form id="proposalForm" class="space-y-6">
+                <div>
+                    <label for="domain" class="block text-dracula-foreground font-medium mb-2">Domínio de
+                        interesse</label>
+                    <select id="domain" name="domain" required
+                        class="w-full px-4 py-3 bg-dracula-background border border-dracula-purple rounded-md focus:outline-none focus:ring-2 focus:ring-dracula-pink text-dracula-foreground">
+                        <option value="">Selecione um domínio</option>
+                        <option value="exemploum.com.br">exemploum.com.br</option>
+                        <option value="exemplodois.com.br">exemplodois.com.br</option>
+                        <option value="exemplotres.net">exemplotres.net</option>
+                        <option value="exemploquatro.net.br">exemploquatro.net.br</option>
+                        <option value="exemplocinco.com">exemplocinco.com</option>
+                        <option value="exemploseis.org">exemploseis.org</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="name" class="block text-dracula-foreground font-medium mb-2">Nome</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full px-4 py-3 bg-dracula-background border border-dracula-purple rounded-md focus:outline-none focus:ring-2 focus:ring-dracula-pink text-dracula-foreground placeholder-dracula-comment">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-dracula-foreground font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-3 bg-dracula-background border border-dracula-purple rounded-md focus:outline-none focus:ring-2 focus:ring-dracula-pink text-dracula-foreground placeholder-dracula-comment">
+                </div>
+
+                <div>
+                    <label for="phone" class="block text-dracula-foreground font-medium mb-2">Telefone</label>
+                    <input type="tel" id="phone" name="phone"
+                        class="w-full px-4 py-3 bg-dracula-background border border-dracula-purple rounded-md focus:outline-none focus:ring-2 focus:ring-dracula-pink text-dracula-foreground placeholder-dracula-comment">
+                </div>
+
+                <div>
+                    <label for="offer" class="block text-dracula-foreground font-medium mb-2">Valor da proposta
+                        (R$)</label>
+                    <input type="number" id="offer" name="offer" placeholder="0.00" step="0.01" min="0"
+                        class="w-full px-4 py-3 bg-dracula-background border border-dracula-purple rounded-md focus:outline-none focus:ring-2 focus:ring-dracula-pink text-dracula-foreground placeholder-dracula-comment">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-dracula-foreground font-medium mb-2">Mensagem
+                        (opcional)</label>
+                    <textarea id="message" name="message" rows="3"
+                        class="w-full px-4 py-3 bg-dracula-background border border-dracula-purple rounded-md focus:outline-none focus:ring-2 focus:ring-dracula-pink text-dracula-foreground placeholder-dracula-comment"></textarea>
+                </div>
+
+                <!-- Botão de envio -->
+                <div>
+                    <button type="submit" id="submitBtn"
+                        class="w-full bg-dracula-purple hover:bg-dracula-pink text-dracula-foreground font-medium py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105">
+                        Enviar Proposta
+                    </button>
+                </div>
+            </form>
+
+            <!-- Mensagem de sucesso (inicialmente oculta) -->
+            <div id="successMessage"
+                class="hidden mt-6 p-4 bg-dracula-green bg-opacity-20 border border-dracula-green rounded-md">
+                <p class="text-dracula-green font-medium">Proposta enviada com sucesso! Entraremos em contato em breve.
+                </p>
+            </div>
+
+            <!-- Mensagem de erro (inicialmente oculta) -->
+            <div id="errorMessage"
+                class="hidden mt-6 p-4 bg-dracula-red bg-opacity-20 border border-dracula-red rounded-md">
+                <p class="text-dracula-red font-medium">Ocorreu um erro ao enviar sua proposta. Por favor, tente
+                    novamente.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
