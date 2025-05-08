@@ -44,27 +44,39 @@
             <div class="bg-dark-surface rounded-xl shadow-lg p-6 border border-dark-border flex-grow"
                 style="cursor:default"> <!-- Style do ponteiro do mouse -->
                 <h2 class="text-2xl font-bold text-dark-accent mb-4">Domínios Disponíveis</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <div
-                        class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-dark-accent transition-colors">
-                        <h3 class="text-xl text-dark-foreground font-medium">corpo.com.br</h3>
-                        <p class="text-dark-muted mt-1">Perfeito para academias, clínicas de estética, fisioterapia ou
-                            projetos ligados à saúde e bem-estar.</p>
-                        <p class="text-dark-warning font-medium mt-2">Valor inicial: R$ 1.500,00</p>
+
+                <!-- Domínio em destaque -->
+                <div class="mb-8">
+                    <div class=" bg-opacity-20 p-6 rounded-2xl border-2 border-dark-accent shadow-lg">
+                        <div class="flex flex-col sm:flex-row justify-between items-start gap-4">
+                            <div>
+                                <span
+                                    class="inline-block bg-dark-accent text-dark-foreground text-[11px] font-semibold tracking-wide uppercase px-2 py-1 rounded mb-3">
+                                    Em Destaque
+                                </span>
+                                <h3 class="text-3xl font-extrabold text-dark-foreground leading-tight">corpo.com.br</h3>
+                                <p class="text-dark-muted text-sm mt-3 max-w-md">
+                                    Ideal para academias, clínicas de estética, fisioterapia ou qualquer projeto ligado
+                                    à saúde e bem-estar.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div
                         class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-dark-accent transition-colors">
                         <h3 class="text-xl text-dark-foreground font-medium">admvendas.com.br</h3>
                         <p class="text-dark-muted mt-1">Ideal para plataformas de vendas, consultorias comerciais ou
                             sistemas de gestão para equipes de vendas.</p>
-                        <p class="text-dark-warning font-medium mt-2">Valor inicial: R$ 2.000,00</p>
                     </div>
                     <div
                         class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-dark-accent transition-colors">
                         <h3 class="text-xl text-dark-foreground font-medium">aconchegokids.com.br</h3>
                         <p class="text-dark-muted mt-1">Perfeito para lojas infantis, escolas, berçários ou projetos
                             voltados ao público infantil e familiar.</p>
-                        <p class="text-dark-warning font-medium mt-2">Valor inicial: R$ 1.800,00</p>
                     </div>
                     <div
                         class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-dark-accent transition-colors">
@@ -72,19 +84,6 @@
                         <p class="text-dark-muted mt-1">Perfeito para projetos
                             religiosos, aplicativos de
                             espiritualidade ou blogs com reflexões e orações diárias.</p>
-                        <p class="text-dark-warning font-medium mt-2">Valor inicial: R$ 1.200,00</p>
-                    </div>
-                    <div
-                        class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-dark-accent transition-colors">
-                        <h3 class="text-xl text-dark-foreground font-medium">exemplocinco.com</h3>
-                        <p class="text-dark-muted mt-1">Domínio internacional premium</p>
-                        <p class="text-dark-warning font-medium mt-2">Valor inicial: R$ 3.500,00</p>
-                    </div>
-                    <div
-                        class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-dark-accent transition-colors">
-                        <h3 class="text-xl text-dark-foreground font-medium">exemploseis.org</h3>
-                        <p class="text-dark-muted mt-1">Ideal para organizações</p>
-                        <p class="text-dark-warning font-medium mt-2">Valor inicial: R$ 1.300,00</p>
                     </div>
                 </div>
             </div>
@@ -104,8 +103,6 @@
                             <option value="admvendas.com.br">admvendas.com.br</option>
                             <option value="aconchegokids.com.br">aconchegokids.com.br</option>
                             <option value="365oracoesdiarias.com.br">365oracoesdiarias.com.br</option>
-                            <option value="exemplocinco.com">exemplocinco.com</option>
-                            <option value="exemploseis.org">exemploseis.org</option>
                         </select>
                     </div>
 

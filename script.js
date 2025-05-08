@@ -40,7 +40,7 @@ document.getElementById('proposalForm').addEventListener('submit', function (e) 
     formData.append('_subject', 'Nova Proposta para Compra de Site: ' + formData.get('domain'));
 
     // Enviar dados
-    fetch('https://formsubmit.co/ajax/dev.gabrielvcosta@gmail.com', {
+    fetch('https://formsubmit.co/ajax/tales_guilherme@hotmail.com ', {
         method: 'POST',
         body: formData
     })
